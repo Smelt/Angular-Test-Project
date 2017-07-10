@@ -1,7 +1,7 @@
-<div class="container-fluid">
+
 <md-tab-group>
   <md-tab label="A Day"></md-tab>
-  <md-tab (onClick)="addCard()" label="B Day"></md-tab>
+  <a><md-tab  (selectChange)="addCard()" label="B Day"></md-tab></a>
 </md-tab-group>
 <hr>
 
@@ -35,6 +35,6 @@
   </md-card-content>
 
 </md-card>
-</div>
+
 
 

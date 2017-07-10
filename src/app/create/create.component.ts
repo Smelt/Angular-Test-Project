@@ -21,6 +21,13 @@ export class CreateComponent implements OnInit {
   
   }
 
+  onLinkClick($event: any) {
+  console.log($event);
+  this.addCard();
+}
+  
+    
+
   addCard(){
     console.log("pushed ");
     let e = new Exercise("PlaceHolder", 0 , 0);
