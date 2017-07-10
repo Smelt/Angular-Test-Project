@@ -1,0 +1,40 @@
+<div class="container-fluid">
+<md-tab-group>
+  <md-tab label="A Day"></md-tab>
+  <md-tab (onClick)="addCard()" label="B Day"></md-tab>
+</md-tab-group>
+<hr>
+
+<md-card class="col-lg-2 col-md-3 card" *ngFor="let exercise of exercises">
+    <md-card-title>
+      </md-card-title>
+  <md-card-content>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="Workout Name">
+    </md-input-container></td>
+    <br>
+  <td> <md-input-container class="example-full-width">
+      <input mdInput placeholder="Rep Scheme (Ex: 10x10)">
+    </md-input-container>
+  </td>
+     </md-card-content>
+
+
+    <md-card-actions>
+    <button md-button >Duplicate</button>
+    <button md-button (click)="deleteCard(exercise)">Delete</button>
+  </md-card-actions>
+</md-card>
+
+<md-card class="col-lg-2 col-md-3 addCard" (click)="addCard()" >
+  
+  <md-card-content>
+    Placeholder
+    Placeholder
+    Placeholder
+  </md-card-content>
+
+</md-card>
+</div>
+
+

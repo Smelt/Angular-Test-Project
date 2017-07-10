@@ -1,0 +1,25 @@
+.card{
+    background-color: beige;
+    color: black;
+    border: 10px;
+    border-color: lightpink;
+    margin: 10px;
+
+}
+
+#md-card-actions{
+    color: black;
+}
+
+.addCard{
+    background-color: lightblue;
+    border: 10px;
+    border-color: darkblue;
+    margin: 10px;
+    font-weight: 500;
+
+}
+
+.example-full-width {
+  width: 100%;
+}

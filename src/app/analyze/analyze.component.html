@@ -1,0 +1,17 @@
+<div class="w3-container">
+<h2>Workouts Will be Analyzed</h2>
+
+<hr>
+
+
+
+<md-card class="col-lg-3 card" *ngFor="let exercise of exercises">
+  {{exercise.name}} 
+  
+
+  <md-card-content>
+    {{exercise.sets}} x {{exercise.reps}}
+  </md-card-content>
+</md-card>
+
+</div>
